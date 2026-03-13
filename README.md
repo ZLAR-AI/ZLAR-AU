@@ -144,13 +144,17 @@ ZLAR-AU reads the JSONL audit file produced by ZLAR Gate. Each line is a JSON ob
 
 ## The ZLAR Family
 
-| Product | What it does |
-|---------|-------------|
-| [ZLAR-OC](https://github.com/ZLAR-AI/ZLAR-OC) | OS-level containment for OpenClaw agents |
-| [ZLAR-CC](https://github.com/ZLAR-AI/ClaudeCode_ZLAR-CC) | Claude Code specific gate |
-| [ZLAR Gate](https://github.com/ZLAR-AI/ZLAR-Gate) | Universal gate — Claude Code, Cursor, Windsurf |
-| [ZLAR-LT](https://github.com/ZLAR-AI/ZLAR-LT) | Zero-config governance (one command install) |
-| **ZLAR-AU** | Audit trail analysis & compliance reporting ← you are here |
+Same thesis: independent governance that does not depend on the model's cooperation. Different surfaces.
+
+| Product | Platform | What it does |
+|---------|----------|-------------|
+| **[ZLAR-OC](https://github.com/ZLAR-AI/ZLAR-OC)** | OpenClaw | OS-level containment — user isolation, kernel sandbox, pf firewall, gate daemon, signed policy, audit trail |
+| **[ZLAR-CC](https://github.com/ZLAR-AI/ClaudeCode_ZLAR-CC)** | Claude Code | Hook-based gate — tool-call interception, risk classification, signed policy, Telegram approval |
+| **[ZLAR Gate](https://github.com/ZLAR-AI/ZLAR-Gate)** | Claude Code + Cursor + Windsurf | Universal gate — one policy across multiple editors, framework-specific adapters |
+| **[ZLAR-LT](https://github.com/ZLAR-AI/ZLAR-LT)** | Claude Code + Cursor + Windsurf | Zero-config governance — one command, instant protection, deny-heavy defaults |
+| **[ZLAR-AU](https://github.com/ZLAR-AI/ZLAR-AU)** | ZLAR Gate audit trail | Compliance reporting — hash chain verification, framework mapping, Splunk export |
+| **[ZLAR-NT](https://github.com/ZLAR-AI/ZLAR-NT)** | Cross-platform | Network egress policy — destination-aware, domain-level, gate-integrated |
+| **[ZLAR-FL](https://github.com/ZLAR-AI/ZLAR-FL)** | Cross-platform | Fleet governance — registry, health monitoring, audit aggregation, policy comparison |
 
 ## License
 
