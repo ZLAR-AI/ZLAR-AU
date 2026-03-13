@@ -1,0 +1,6 @@
+# Generated reports
+var/reports/
+
+# OS files
+.DS_Store
+Thumbs.db
