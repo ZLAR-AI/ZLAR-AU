@@ -41,8 +41,10 @@ if [ -z "${AUDIT_FILE}" ] || [ ! -f "${AUDIT_FILE}" ]; then
     for candidate in \
         "${HOME}/.zlar-lt/var/log/audit.jsonl" \
         "${HOME}/.zlar-gate/var/log/audit.jsonl" \
+        "/var/log/zlar-oc/audit.jsonl" \
         "$(dirname "${PROJECT_DIR}")/zlar-gate/var/log/audit.jsonl" \
-        "$(dirname "${PROJECT_DIR}")/zlar-lt/var/log/audit.jsonl"; do
+        "$(dirname "${PROJECT_DIR}")/zlar-lt/var/log/audit.jsonl" \
+        "$(dirname "${PROJECT_DIR}")/zlar-oc/var/log/audit.jsonl"; do
         if [ -f "${candidate}" ]; then
             AUDIT_FILE="${candidate}"
             break
